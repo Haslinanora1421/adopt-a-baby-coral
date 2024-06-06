@@ -16,7 +16,7 @@ body {
   font-family: "Karla", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 7000px;
+  min-height: 8000px;
 }
 
 /* Navbar */
@@ -1053,5 +1053,59 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .menu h2 {
+    padding: 110rem 7% 1.4rem;
+  }
+
+  .benefit {
+    padding: 80rem 7% 1.4rem;
+  }
+
+  .menu .row .modal .modal-container {
+    flex-wrap: wrap;
+  }
+
+  .menu .row .menu-card .modal .modal-content h3 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 3rem;
+    color: #000;
+    text-align: left;
+  }
+
+  .menu .row .menu-card .modal .modal-content img {
+    height: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .menu .row .menu-card .modal .product-stars {
+    font-size: 0;
+    padding: 1rem 7% 1.4rem;
+    color: var(--primary);
+    text-align: left;
+  }
+
+  .menu .row .modal .modal-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: auto;
+    color: #000;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .menu .row .menu-card .modal .modal-content a {
+    display: flex;
+    gap: 1rem;
+    width: 12rem;
+    background-color: var(--primary);
+    color: #fff;
+    margin-top: 1rem;
+    padding: 1rem 1.6rem;
+    margin-left: 0;
   }
 }
