@@ -13,55 +13,37 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="file:///E:fontawesome/css/all.css">
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="https://kit.fontawesome.com/346db40e0c.js" crossorigin="anonymous"></script>
+
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- App -->
+     <script src="js/app.js"></script>
 
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Navbar start -->
-    <nav class="navbar">
-      <img src="logo.png" width="100px"/>
+    <nav class="navbar" x-data>
+      <img src="logo.png" width="200px"/>
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#about">About Program</a>
         <a href="#menu">Shop</a>
+        <a href="#rating">Rating Us</a>
         <a href="#contact">Contact Us</a>
       </div>
 
       <div class="navbar-extra">
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-        <a href="#" id="wishlist-cart-button"><i data-feather="heart"></i></a>
       </div>
-
-      <!-- Wishlist Cart start -->
-      <div class="wishlist-cart">
-        <div class="cart-item">
-          <img src="img/acropora-humilis.jpg" alt="Product 1" />
-          <div class="item-detail">
-            <h3>Acropora humilis</h3>
-          </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
-        <div class="cart-item">
-          <img src="img/Leptoseris-yabei.jpg" alt="Product 2" />
-          <div class="item-detail">
-            <h3>Leptoseris yabei</h3>
-          </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
-        <div class="cart-item">
-          <img src="img/coral-fragment.jpg" width="72px" alt="Product 3" />
-          <div class="item-detail">
-            <h3>Coral Fragment</h3>
-            <div class="item-price">IDR 150K</div>
-          </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
-      </div>
-      <!-- Wishlist Cart end -->
     </nav>
     <!-- Navbar end -->
 
@@ -73,8 +55,7 @@
           Spread awareness about the importance of coral reefs and inspire
           others to protect them!
         </p>
-        <a href="#" class="cta">Adopt A Baby Coral</a>
-      </main>
+        </main>
     </section>
     <!-- Hero Section End -->
 
@@ -83,7 +64,7 @@
       <h2>What Is <span>Coral Adoption</span>?</h2> 
       <div class="row">
         <div class="about-img">
-          <img src="img/about.jpg" width="500px" alt="About Program" />
+          <img src="img/about.png" width="500px" alt="About Program" />
         </div>
         <div class="content">
           <h3>
@@ -103,7 +84,7 @@
 
       <div class="row">
         <div class="about-img">
-          <img src="img/about1.jpg" width="500px" alt="About Program" />
+          <img src="img/about1.png" width="500px" alt="About Program" />
         </div>
         <div class="content">
           <h3>
@@ -194,283 +175,262 @@
     <!-- About Section End -->
 
      <!-- Menu Section start -->
-     <section id="menu" class="menu">
+    <section id="menu" class="main-text">
       <h2>Enroll in a coral reef identification course and <span>learn to recognize different reef types</span>!</h2>
         <p>- Acropora -</p>
-
-      <div class="row">
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/acropora-branching.jpg" alt="Product 1" />
-          </div>
-          <div class="menu-content">
-            <h3>Acropora muricata</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-          <div class="modal" id="item-detail-modal">
-            <div class="modal-container">
-              <a href="#" class="close-icon"><i data-feather="x"></i></a>
-              <div class="modal-content">
-                <img src="img/acropora-branching.jpg" alt="Product 1" />
-                <div class="product-content">
-                  <h3>Acropora muricata - Branching </h3>
-                  <p>
-                    Branches like twigs.
-                  </p>
-                  <div class="product-stars">
-                    <i data-feather="star" class="star-full"></i>
-                    <i data-feather="star" class="star-full"></i>
-                    <i data-feather="star" class="star-full"></i>
-                    <i data-feather="star" class="star-full"></i>
-                    <i data-feather="star"></i>
-                  </div>
-                  <a href="#"><i data-feather="heart"></i> <span>add to wishlist</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> 
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/Acropora-Hyacinthus.jpg" alt="Product 2" />
-          </div>
-          <div class="menu-content">
-            <h3>Acropora hyacinthus</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-        </div> 
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/Acropora-Palifera.jpg" alt="Product 3" />
-          </div>
-          <div class="menu-content">
-            <h3>Acropora palifera</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-        </div> 
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/acropora-humilis.jpg" alt="Product 4" />
-          </div>
-          <div class="menu-content">
-            <h3>Acropora humillis</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-        </div> 
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/Montipora-informis.jpg" alt="Product 5" class="product5"/>
-          </div>
-          <div class="menu-content">
-            <h3>Montipora informis</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-        </div> 
+      <div class="main-wrap">
+       <div class="product">
+         <div class="image-galery">
+           <img src="img/acropora-muricata.png" id="productImg" alt="Product-1">
+         </div>
+         <div class="product-details">
+           <div class="details">
+             <h2>Acropora muricata</h2>
+             <h3>Branches like twigs</h3>
+             <h4>IDR 150K-750K</h4>
+             <p>Colonies are arborescent, with cylindrical branches. They usually form thickets and may form single species stands over 10 metres across. In shallow water branches are short and compact, while in deeper water colonies have more open branches. Axial corallites are exsert. Radial corallites are tubular. They may be similar or varied in size, and uniformly or irregularly distributed.</p>
+           </div>
+           <div class="sub-btn">
+             <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
+           </div>
+         </div>
+       </div>
       </div>
-    </section>
-    <section id="menu1" class="menu1">
-        <p>- Non-Acropora -</p>
-
-      <div class="row">
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/Leptoseris-yabei.jpg" alt="Product 1" />
-          </div>
-          <div class="menu-content">
-            <h3>Leptoseris yabei</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-        </div> 
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/Fungia-concinna.jpg" alt="Product 2" />
-          </div>
-          <div class="menu-content">
-            <h3>Fungia concinna</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-        </div> 
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/Millepora-dichotoma.jpg" alt="Product 3" />
-          </div>
-          <div class="menu-content">
-            <h3>Millepora dichotoma</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-        </div> 
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="menu-image">
-            <img src="img/Heliopora-coerulea.jpg" alt="Product 4" />
-          </div>
-          <div class="menu-content">
-            <h3>Heliopora coerulea</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-          </div>
-        </div> 
-      </div>
+    <div class="main-wrap2">
+     <div class="product">
+       <div class="image-galery">
+         <img src="img/acropora-hyacinthus.png" id="productImg" alt="Product-1">
+       </div>
+       <div class="product-details">
+         <div class="details">
+           <h2>Acropora hyacinthus</h2>
+           <h3>Creeping form, like rudimentary Acropora</h3>
+           <h4>IDR 150K-750K</h4>
+           <p>Colonies are wide flat plates and tables or tiered aggregations of small plates. Branchlets are thin and finely structured except where exposed to wave action, when they become closely fused. Branchlets are fine and upward-projecting. Axial corallites are distinct but not exsert. Radial corallites are cup-shaped and form rosettes.</p>
+         </div>
+         <div class="sub-btn">
+          <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
+         </div>
+       </div>
+     </div>
+   </div>
+    <div class="main-wrap3">
+     <div class="product">
+       <div class="image-galery">
+         <img src="img/acropora-palifera.png" id="productImg" alt="Product-1">
+       </div>
+       <div class="product-details">
+         <div class="details">
+           <h2>Acropora palifera</h2>
+           <h3>Plate-branched and sturdy</h3>
+           <h4>IDR 150K-750K</h4>
+           <p>Isopora palifera is a species of stony coral in the family Acroporidae. It is a reef building coral living in shallow water and adopts different forms depending on the water conditions where it is situated. It is found in the Western Indo-Pacific Ocean as far east as Australia.</p>
+         </div>
+         <div class="sub-btn">
+          <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
+         </div>
+       </div>
+     </div>
+   </div>
+    <div class="main-wrap4">
+     <div class="product">
+       <div class="image-galery">
+         <img src="img/acropora-humillis.png" id="productImg" alt="Product-1">
+       </div>
+       <div class="product-details">
+         <div class="details">
+           <h2>Acropora humilis</h2>
+           <h3>Branches are close together like fingers</h3>
+           <h4>IDR 150K-750K</h4>
+           <p>The species is found in digitate colonies of thick tapering branches. The branches contain one or more axial corallites that are large and dome-shaped, and either incipient axial corallites or branchlets at their bases. Its radial corallites are found in two different diameters, the larger of which are organised in rows.</p>
+         </div>
+         <div class="sub-btn">
+          <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
+         </div>
+       </div>
+     </div>
+   </div>
+    <div class="main-wrap5">
+     <div class="product">
+       <div class="image-galery">
+         <img src="img/montipora-informis.png" id="productImg" alt="Product-1">
+       </div>
+       <div class="product-details">
+         <div class="details">
+           <h2>Montipora informis</h2>
+           <h3>Horizontal branching</h3>
+           <h4>IDR 150K-750K</h4>
+           <p>Colonies are massive to encrusting. Corallites are evenly distributed and immersed. The coenosteum is covered with elongate papillae of uniform length. Their colours are brown or mottled brown and white. Papillae may have white or blue tips. White tentacles may be extended during the day.</p>
+         </div>
+         <div class="sub-btn">
+          <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
+         </div>
+       </div>
+     </div>
+   </div>
     </section>
 
-    <section id="menu" class="shop">
-        <p>- Price -</p>
-
-      <div class="row">
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
+    <section id="shop" class="main-text2">
+      <p>- Non-Acropora -</p>
+      
+      <div class="main-wrap">
+        <div class="product">
+          <div class="image-galery">
+            <img src="img/leptoseris-yabei.png" id="productImg" alt="Product-1">
           </div>
-          <div class="menu-image">
-            <img src="img/coral-fragment.jpg" alt="Product 1" />
-          </div>
-          <div class="menu-content">
-            <h3>Coral Fragment</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
+          <div class="product-details">
+            <div class="details">
+              <h2>Leptoseris yabei</h2>
+              <h3>The shape resembles a sheet</h3>
+              <h4>IDR 150K-750K</h4>
+              <p>Colonies are laminar, in whorls or tiers or vase-shaped. They are commonly over one metre across. Corallites are enclosed in rectangular pockets formed between radiating ridges and low walls which are parallel to frond margins. Septo-costae are moderately exsert and alternate.</p>
+            </div>
+            <div class="sub-btn">
+              <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
             </div>
           </div>
-          <div class="product-price">IDR <span>150K</span></div>
-        </div> 
-        <div class="menu-card">
-          <div class="menu-icons">
-            <a href="#"><i data-feather="heart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
+        </div>
+       </div>
+      <div class="main-wrap2">
+        <div class="product">
+          <div class="image-galery">
+            <img src="img/fungia-concinna.png" id="productImg" alt="Product-1">
           </div>
-          <div class="menu-image">
-            <img src="img/coral-spider.jpeg" alt="Product 2" />
-          </div>
-          <div class="menu-content">
-            <h3>Coral Spider</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
+          <div class="product-details">
+            <div class="details">
+              <h2>Fungia concinna</h2>
+              <h3>Mushroom-like shape, solitary</h3>
+              <h4>IDR 150K-750K</h4>
+              <p>Polyps are circular, up to 160 millimetres diameter and generally flat. Septa are densely packed. Septal teeth and costal spines are small, giving septa a smooth appearance. Tentacular lobes are not formed or are minute. The undersurface is usually without pits.</p>
+            </div>
+            <div class="sub-btn">
+              <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
             </div>
           </div>
-          <div class="product-price">IDR <span>750K</span></div>
-        </div> 
-      </div>
+        </div>
+       </div>
+      <div class="main-wrap3">
+        <div class="product">
+          <div class="image-galery">
+            <img src="img/millepora-dichotoma.png" id="productImg" alt="Product-1">
+          </div>
+          <div class="product-details">
+            <div class="details">
+              <h2>Millepora dichotoma</h2>
+              <h3>All types of fire coral, yellow at the end of the colony</h3>
+              <h4>IDR 150K-750K</h4>
+              <p>M. dichotoma is a colonial hermatypic coral with a calcareous endoskeleton. They form colonies up to 60 cm wide, but clumps of colonies may be several meters across. They initially build as encrusting coral, adhering themselves to hard substrate.</p>
+            </div>
+            <div class="sub-btn">
+              <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
+            </div>
+          </div>
+        </div>
+       </div>
+      <div class="main-wrap4">
+        <div class="product">
+          <div class="image-galery">
+            <img src="img/heliopora-coerulea.png" id="productImg" alt="Product-1">
+          </div>
+          <div class="product-details">
+            <div class="details">
+              <h2>Heliopora coerulea</h2>
+              <h3>Blue coral, the presence of blue on the skeleton</h3>
+              <h4>IDR 150K-750K</h4>
+              <p>Blue coral is a species of colonial coral. It is the only octocoral known to produce a massive skeleton. This skeleton is formed of aragonite, similar to that of scleractinia. Individual polyps live in tubes within the skeleton and are connected by a thin layer of tissue over the outside of the skeleton.</p>
+            </div>
+            <div class="sub-btn">
+              <a href="https://bit.ly/CoralAdoptionRegistration"><button class="submit">Adopt Now</button></a>
+            </div>
+          </div>
+        </div>
+       </div>
     </section>
 
+    <section id="shop" class="price">
+      <p>- Price -</p>
+
+      <div class="main-wrap">
+        <div class="product">
+          <div class="image-galery">
+            <img src="img/coral-fragment.png" id="productImg" alt="Product-1">
+          </div>
+          <div class="product-details">
+            <div class="details">
+              <h2>Coral Fragment</h2>
+              <h4>IDR 150K</h4>
+              <p>If you're just getting into the hobby you may be hearing this term tossed around a lot. Frags are those small pieces of coral being sold at aquarium stores and many of the reefing events. Frag is short for the fragment you are cutting or breaking off a coral colony.</p>
+            </div>
+          </div>
+        </div>
+       </div>
+      <div class="main-wrap2">
+        <div class="product">
+          <div class="image-galery">
+            <img src="img/coral-spider.png" id="productImg" alt="Product-1">
+          </div>
+          <div class="product-details">
+            <div class="details">
+              <h2>Coral Spider</h2>
+              <h4>IDR 750K</h4>
+              <p>The damaged coral reef’s ability to regenerate will be improved with the installation of coral spiders. The outcome of this project will be the initial transformation of a coral rubble field into an area covered by living coral fragments, growing over time and restoring the natural reef ecosystem.</p>
+            </div>
+          </div>
+        </div>
+       </div>
+    </section>
     <!-- Menu Section end -->
+
+    <!-- Rating and Reviews start -->
+    <section id="rating" class="rate">
+      <h2>Rating us and please give us a <span>feedback to help us improve our program!</span></h2>
+
+      <div class="container-rate">
+        <div class="rating">
+          <div class="post">
+            <div class="text">Thanks for rating us!</div>
+            <div class="edit">EDIT</div>
+          </div>
+          <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="block">
+              <header></header>
+              <div class="textarea">
+                <textarea cols="30" placeholder="Describe your experience..."></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Post</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <script>
+          const btn = document.querySelector("button");
+          const post = document.querySelector(".post");
+          const widget = document.querySelector(".star-widget");
+          const editBtn = document.querySelector(".edit");
+          btn.onclick = () => {
+          widget.style.display = "none";
+          post.style.display = "block";
+          editBtn.onclick = () => {
+            widget.style.display = "block";
+            post.style.display = "none";
+          }
+          return false;
+        }
+        </script>
+      </div>
+    </section>
+    <!-- Rating and Reviews end -->
 
      <!-- Contact Section start -->
      <section id="contact" class="contact">
@@ -488,7 +448,7 @@
           class="map"
         ></iframe>
 
-        <form action="">
+        <form action="block">
           <div class="input-group">
             <i data-feather="user"></i>
             <input type="text" placeholder="Your Name" />
@@ -519,11 +479,17 @@
         <a href="#home">Home</a>
         <a href="#about">About Program</a>
         <a href="#menu">Shop</a>
+        <a href="#rating">Rating Us</a>
         <a href="#contact">Contact Us</a>
       </div>
 
+      <div class="partner">
+        <p>Partnering with:</p>
+        <img src="logo-mitra.png" width="400px"/>
+      </div>
+
       <div class="credit">
-        <p>Created by <a href="">manta-alfredi</a>. | &copy; 2023.</p>
+        <p>Created by <a href="">manta-alfredi</a>. | &copy; 2024.</p>
       </div>
     </footer>
     <!-- Footer end -->
