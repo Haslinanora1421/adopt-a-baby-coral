@@ -16,7 +16,7 @@ body {
   font-family: "Karla", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 6000px;
+  min-height: 7000px;
 }
 
 /* Navbar */
@@ -1443,68 +1443,5 @@ footer .partner p {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
-  }
-  .menu h2 {
-    padding: 110rem 7% 1.4rem;
-  }
-
-  .benefit {
-    padding: 80rem 7% 1.4rem;
-  }
-
-  .icons .container .box img {
-    height: 7rem;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .benefit {
-    padding: 75rem 7% 1.4rem;
-  }
-
-  .benefit .container-list .tag img {
-    height: 8rem;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .main-text {
-    padding: 105rem 7% 1.4rem;
-  }
-
-  .main-wrap {
-    padding-bottom: 50rem;
-  }
-
-  .main-wrap2 {
-    padding-bottom: 45rem;
-  }
-
-  .main-wrap3 {
-    padding-bottom: 45rem;
-  }
-
-  .main-wrap4 {
-    padding-bottom: 45rem;
-  }
-
-  .main-text2 {
-    padding: 42rem 7% 1.4rem;
-  }
-
-  .main-text2 .main-wrap {
-    padding-bottom: 68rem;
-  }
-
-  .main-text2 .main-wrap2 {
-    padding-bottom: 45rem;
-  }
-
-  .main-text2 .main-wrap3 {
-    padding-bottom: 50rem;
-  }
-
-  .price {
-    padding: 3rem 7% 1.4rem;
   }
 }
