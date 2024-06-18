@@ -1444,4 +1444,83 @@ footer .partner p {
   html {
     font-size: 55%;
   }
+
+  .icons .container .box img {
+    height: 7rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .benefit {
+    padding: 75rem 7% 1.4rem;
+  }
+
+  .benefit .container-list .tag img {
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .main-wrap2 {
+    padding-top: 50rem;
+  }
+
+  .main-wrap3 {
+    padding-top: 53rem;
+  }
+
+  .main-wrap4 {
+    padding-top: 53rem;
+  }
+
+  .main-wrap5 {
+    padding-top: 53rem;
+  }
+
+  .main-text2 {
+    padding: 45rem 7% 1.4rem;
+  }
+
+  .main-text2 .main-wrap {
+    padding-bottom: 70rem;
+  }
+
+  .main-text2 .main-wrap3 {
+    padding-bottom: 50rem;
+  }
+
+  .price {
+    padding: 15rem 7% 1.4rem;
+  }
+
+  .price .main-wrap {
+    padding-top: 20rem;
+  }
+
+  .price .main-wrap2 {
+    padding-top: 50rem;
+  }
+
+  .rating {
+    flex-wrap: wrap;
+    font-size: 5px;
+    width: 350px;
+    padding: 5px;
+  }
+
+  .contact {
+    padding: 5rem 7%;
+  }
+
+  .contact h2 {
+    padding-bottom: 0.2rem;
+  }
+
+  .contact p {
+    padding-top: 0.2rem;
+  }
+
+  .partner {
+    flex-wrap: wrap;
+  }
 }
