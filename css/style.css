@@ -1445,6 +1445,25 @@ footer .partner p {
     font-size: 55%;
   }
 
+  .hero {
+    flex-wrap: wrap;
+    background-size: cover;
+    min-height: 120vh;
+    width: 400px;
+  }
+
+  .about {
+    width: 400px;
+  }
+
+  .about1 {
+    width: 400px;
+  }
+
+  .icons {
+    width: 400px;
+  }
+
   .icons .container .box img {
     height: 7rem;
     object-fit: cover;
@@ -1453,12 +1472,17 @@ footer .partner p {
 
   .benefit {
     padding: 75rem 7% 1.4rem;
+    width: 400px;
   }
 
   .benefit .container-list .tag img {
     height: 8rem;
     object-fit: cover;
     object-position: center;
+  }
+
+  .main-text {
+    width: 400px;
   }
 
   .main-wrap2 {
@@ -1479,6 +1503,7 @@ footer .partner p {
 
   .main-text2 {
     padding: 45rem 7% 1.4rem;
+    width: 400px;
   }
 
   .main-text2 .main-wrap {
@@ -1491,6 +1516,7 @@ footer .partner p {
 
   .price {
     padding: 15rem 7% 1.4rem;
+    width: 400px;
   }
 
   .price .main-wrap {
@@ -1499,6 +1525,10 @@ footer .partner p {
 
   .price .main-wrap2 {
     padding-top: 50rem;
+  }
+
+  .rate {
+    width: 400px;
   }
 
   .rating {
@@ -1510,6 +1540,7 @@ footer .partner p {
 
   .contact {
     padding: 5rem 7%;
+    width: 400px;
   }
 
   .contact h2 {
@@ -1522,5 +1553,9 @@ footer .partner p {
 
   .partner {
     flex-wrap: wrap;
+  }
+
+  footer {
+    width: 400px;
   }
 }
